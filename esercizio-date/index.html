@@ -7,33 +7,38 @@
     <title>Date</title>
   </head>
   <body>
-    <h2>Data di oggi</h2>
+    <h2>current date</h2>
     <p id="current-date"></p>
-
-    <h3>Anno</h3>
+    <button onclick="showDateTime()">show date</button>
+    <h3>year</h3>
     <p id="current-year"></p>
-
-    <h3>Mese</h3>
+    <button onclick="showYear()">show year</button>
+    <h3>month</h3>
     <p id="current-month"></p>
-
-    <h3>Giorni</h3>
+    <button onclick="showMonth()">show month</button>
+    <h3>day</h3>
     <p id="current-day"></p>
-
-    <h3>Ore</h3>
-    <p id="current-hours"></p>
-
-    <h3>Minuti</h3>
-    <p id="current-minutes"></p>
-
-    <h3>Secondi</h3>
-    <p id="current-seconds"></p>
-
+    <button onclick="showDay()">show day</button>
+    <h3>hour</h3>
+    <p id="current-hour"></p>
+    <button onclick="showHour()">show hour</button>
+    <h3>Minutes</h3>
+    <p id="current-minute"></p>
+    <button onclick="showMinute()">show minute</button>
+    <h3>Seconds</h3>
+    <p id="current-second"></p>
+    <button onclick="showSecond()">show second</button>
     <h3>Millisecondi</h3>
-    <p id="current-milliseconds"></p>
-
-    <h2>Data italiana</h2>
+    <p id="current-millisecond"></p>
+    <button onclick="showMillisecond()">show millisecond</button>
+    <h2>italian date</h2>
     <p id="data-it"></p>
-
-    <script src="./script.js"></script>
+    <button onclick="showItalianDateTime()">show italian date</button>
+    <h2>british date</h2>
+    <p id="data-gb"></p>
+    <button onclick="showBritishDateTime()">show british date</button>
+    <h2>simple digital clock</h2>
+    <div id="ClockDisplay" onload="showTime()"></div>
+    <script src="./funzioni.js"></script>
   </body>
 </html>
