@@ -50,13 +50,4 @@ let day = date.toLocaleString('en-EN',{'weekday' : 'long'})
     let timeGb = new Date().toTimeString('en-GB', { timeZone: 'Europe/London' });
    document.getElementById("data-gb").innerHTML = (timeGb + " " + dateGb)
  }
- function showTime(){
-    let date = new Date();
-    let h = date.getHours(); 
-    let m = date.getMinutes(); 
-    let s = date.getSeconds(); 
-    let time = h + ":" + m + ":" + s;
-    document.getElementById("ClockDisplay").innerHTML = time;
-   setTimeout(showTime, 1000);
-    
-}
+ 
